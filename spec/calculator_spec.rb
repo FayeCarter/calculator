@@ -1,7 +1,6 @@
 require 'calculator'
 
 describe Calculator do
-
   describe '#add' do
     it 'responds to #add' do
       expect(subject).to respond_to(:subtract).with(2).arguments
