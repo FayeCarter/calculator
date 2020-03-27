@@ -3,7 +3,7 @@ require 'calculator'
 describe Calculator do
   describe '#add' do
     it 'responds to #add' do
-      expect(subject).to respond_to(:subtract).with(2).arguments
+      expect(subject).to respond_to(:add).with(2).arguments
     end
 
     it 'adds two numbers' do
@@ -17,7 +17,7 @@ describe Calculator do
       expect(subject).to respond_to(:subtract).with(2).arguments
     end
 
-    it 'subrtacts two numbers' do
+    it 'subtracts two numbers' do
       expect(subject.subtract(5, 2)).to eq 3
       expect(subject.subtract(8, 7)).to eq 1
     end
